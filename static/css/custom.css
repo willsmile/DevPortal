@@ -1,0 +1,7 @@
+body {
+    border-top: 3px solid #c05b4d;
+}
+
+.post .post-header .post-title {
+    font-family: 'Oswald', sans-serif;
+}
