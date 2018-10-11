@@ -1,14 +1,10 @@
 ---
 title: "Privacy Policy of Vnote"
 date: "2018-10-11T20:30:26-04:00"
-tags: [""]
 draft: false
 
 comment: false
-toc: false
-contentCopyright: '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-reward: false
-mathjax: true
+mathjax: false
 ---
 
 I, the author of App named "Vnote - Multi-language Note", don’t store your data, period.
