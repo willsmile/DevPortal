@@ -1,7 +1,7 @@
 ---
 title: "Arch Linux Installation on X280"
 date: 2018-12-23T10:32:34+09:00
-tags: [""]
+tags: ["Linux"]
 draft: false
 
 comment: false
@@ -11,13 +11,13 @@ reward: false
 mathjax: true
 ---
 
-**Set font to a larger one**
+### Set font to a larger one
 setfont sun12x22
 
-**Test network environment**
+### Test network environment
 ping google.com -c 3
 
-**Prepare partitions**
+### Prepare partitions
 fdisk /dev/nvme0n1
 
 Swap:
@@ -27,25 +27,25 @@ Root:
 Home:
 /dev/nvme0n1p7 -> 34G
 
-**Create filesystem**
+### Create filesystem
 mkswap /dev/nvme0n1p5
 mkfs.ext4 /dev/nvme0n1p6
 mkfs.ext4 /dev/nvme0n1p7
 
-**Mount partitions**
+### Mount partitions
 swapon /dev/nvme0n1p5
 mount /dev/nvme0n1p6 /mnt
 mkdir /mnt/home
 mount /dev/nvme0n1p7 /mnt/home
 
-**Install Arch Linux base system**
+### Install Arch Linux base system
 pacstrap /mnt/ base base-devel
 
-**Create fstab**
+### Create fstab
 genfstab /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
 
-**Configure Arch Linux**
+### Configure Arch Linux
 arch-chroot /mnt
 echo "arch-arya" > /etc/hostname
 vi /etc/hosts
